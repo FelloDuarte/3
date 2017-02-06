@@ -9,16 +9,22 @@
     
     
 <script>
+function setup() {
+	createCanvas(displayWidth-10, displayHeight*0.8);
+	background(100,200,40);
+}	
+	
+	
 var value = 0;
 function draw() {
-  fill(value);
+  fill(100);
   rect(25, 25, 50, 50);
 }
+	
 function deviceShaken() {
-  value = value + 5;
-  if (value > 255) {
-    value = 0;
-  }
+    rect(25, 25, 50, 50);
+
+	
 }
 </script>
   </body>
