@@ -12,6 +12,8 @@
 var value = 0;
 var r = 0;
 var bg=color(150,100,70);
+var t=0;
+var x=0;
 
 function setup() {
 	createCanvas(displayWidth-10, displayHeight*0.8);
@@ -23,11 +25,15 @@ function setup() {
 
 function draw() {
 	background(bg);
-	if(r==1){
-		for(var i =0;i<100;i++){
-		background(bg);
+	if(r==1){	
+		
 		fill(100);
-		rect(25, 80, 50, 50);
+		rect(25+x, 80, 50, 50);
+		t=t+1;
+		x=x+random(-10,10);
+		if(t==10){
+			r=0;
+			t=0;
 		}
 			 
 	} else if(r==2){
