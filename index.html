@@ -26,11 +26,12 @@ function setup() {
 	
 
 function draw() {
-	background(20,20,200);
+	background(20,200,20);
 		
 	if(r==1){	
+		noStroke();
 		fill(100);
-		rect(x, y, 50, 50);
+		ellipse(x, y, 100, 100);
 		x=x+random(-10,10);
 		y=y+random(-10,10);
 		t=t+1;
