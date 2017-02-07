@@ -12,12 +12,13 @@
 var value = 0;
 var r = 0;
 var bg=color(10,10,70);
-var t, x;
+var t, x,y;
 
 
 function setup() {
 	createCanvas(displayWidth-10, displayHeight*0.8);
-	x=0;
+	x=displayWidth/2;
+	y=displayHeight/2;
 	t=0;
 
 }	
@@ -25,12 +26,13 @@ function setup() {
 	
 
 function draw() {
-	background(0,200,30);
+	background(200,20,30);
 		
 	if(r==1){	
 		fill(100);
-		rect(25+x, 80, 50, 50);
-		x=x+20;
+		rect(x, y, 50, 50);
+		x=x+random(-10,10);
+		y=y+random(-10,10);
 		t=t+1;
 
 			 
