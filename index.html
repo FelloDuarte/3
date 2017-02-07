@@ -32,11 +32,7 @@ function draw() {
 		rect(25+x, 80, 50, 50);
 		x=x+20;
 		t=t+1;
-		if(t>10){
-		x=0;
-		t=0;
-		r=0;
-		}
+
 			 
 	}else if(r==2){
 	fill(200);
@@ -46,6 +42,12 @@ function draw() {
 	else if (r==3){
 	fill(50);
 	rect(100, 25, 50, 50);
+	}
+	
+	if(t>10){
+		x=0;
+		t=0;
+		r=0;
 	}
 }
 	
