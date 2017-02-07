@@ -21,7 +21,7 @@ var t, x, y,width,heigh;
 
 
 function setup() {
-	width=displayWidth-10;
+	width=displayWidth;
 	height=displayHeight*0.8;
 	createCanvas(width, height);
 	x=width/2;
@@ -39,7 +39,7 @@ function draw() {
 	if(r==1){	
 		noStroke();
 		fill(100);
-		ellipse(x, y, 100, 100);
+		ellipse(x, y, 20, 20);
 		x=x+random(-10,10);
 		y=y+random(-20,20);
 		t=t+1;
