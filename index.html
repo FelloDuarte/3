@@ -12,28 +12,31 @@
 var value = 0;
 var r = 0;
 var bg=color(10,10,70);
-var t, x,y;
+var t, x, y,width,heigh;
 
 
 function setup() {
-	createCanvas(displayWidth-10, displayHeight*0.8);
-	x=displayWidth/2;
-	y=displayHeight/2;
+	width=displayWidth-10;
+	height=displayHeight*0.8;
+	createCanvas(width, height);
+	x=width/2;
+	y=height/2;
 	t=0;
+	background(20,20,20);
 
 }	
 	
 	
 
 function draw() {
-	background(20,200,20);
+	
 		
 	if(r==1){	
 		noStroke();
 		fill(100);
 		ellipse(x, y, 100, 100);
 		x=x+random(-10,10);
-		y=y+random(-10,10);
+		y=y+random(-20,20);
 		t=t+1;
 
 			 
@@ -49,10 +52,11 @@ function draw() {
 	t=t+1;
 	}
 	
-	if(t>10){
+	if(t>20){
 		x=0;
 		t=0;
 		r=0;
+		background(20,20,20);
 	}
 }
 	
