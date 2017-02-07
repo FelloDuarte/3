@@ -27,19 +27,22 @@ function setup() {
 	x=width/2;
 	y=height/2;
 	t=0;
-	background(200,20,20);
+	background(20,20,200);
 
 }	
 	
 	
 
 function draw() {
-	
+	noStroke();
 		
 	if(r==1){	
 		noStroke();
 		fill(100);
+		push();
+ 		rotate(random(-50,50);
 		ellipse(x, y, 20, 20);
+		pop();
 		x=x+random(-10,10);
 		y=y+random(-20,20);
 		t=t+1;
@@ -47,7 +50,9 @@ function draw() {
 			 
 	}else if(r==2){
 	fill(200);
-	rect(50, 50, 50, 50);
+	ellipse(x, y, 20, 20);
+	x=x+random(-10,10);
+	y=y+random(-20,20);
 	t=t+1;
 	}
 	
