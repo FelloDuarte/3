@@ -11,6 +11,7 @@
 <script>
 var value = 0;
 var r = 0;
+var bg=color(150,100,70);
 
 function setup() {
 	createCanvas(displayWidth-10, displayHeight*0.8);
@@ -21,11 +22,13 @@ function setup() {
 	
 
 function draw() {
-	background(150,170,70);
+	background(bg);
 	if(r==1){
-		
+		for(var i =0;i<100;i++){
+		background(bg);
 		fill(100);
 		rect(25, 80, 50, 50);
+		}
 			 
 	} else if(r==2){
 	fill(200);
