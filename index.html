@@ -27,13 +27,14 @@ function setup() {
 function draw() {
 	background(0,20,30);
 		
-		
+	if(r==1){	
 		fill(100);
 		rect(25+x, 80, 50, 50);
-		x=x+2;
-		
+		x=x+20;
+		t=t+1;
+	}
 			 
-	 if(r==2){
+	}else if(r==2){
 	fill(200);
 	rect(50, 50, 50, 50);
 	}
