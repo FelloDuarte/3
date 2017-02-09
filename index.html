@@ -36,14 +36,16 @@ function draw() {
 	noStroke();
 		
 	if(r==1){	
-		noStroke();
+		
 		fill(100);
+		stroke(10);
 		
 		push();
-		rotate(random(-3,3));
+		
 		translate(0, 10);
-		stroke(10);
-		line(0, -10, 0, 0);
+		rotate(random(-3,3));
+		
+		line(0, 0, 0, -10);
 		pop();
 		
 		//x=x+random(-10,10);
