@@ -26,7 +26,7 @@ function setup() {
 	x=width/2;
 	y=height/2;
 	t=0;
-	background(20,200,20);
+	background(200,20,20);
 
 }	
 	
@@ -41,11 +41,11 @@ function draw() {
 		stroke(10);
 		
 		push();
-		
+		for(var i =0;i>10;i++){
 		translate(0, 10);
 		rotate(random(-3,3));
 		
-		line(0, 0, 0, -10);
+		line(0, 0, 0, -10);}
 		pop();
 		
 		//x=x+random(-10,10);
