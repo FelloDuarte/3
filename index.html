@@ -46,9 +46,11 @@ function draw() {
 		rotate(random(-3,3));
 		
 		line(0, 50, 0, 0);
-		pop();
 		fill(200);
-		rect(x, y, 20, 20);
+		noStroke();
+		rect(x-10, y-10, 20, 20);
+		pop();
+		
 		x=x+random(-10,10);
 		y=y+random(-20,20);
 		//x=x+random(-10,10);
