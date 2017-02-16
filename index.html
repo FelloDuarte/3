@@ -65,6 +65,22 @@ function recto(){
 
 	endShape(CLOSE);
 }
+	
+	function curvo(){
+	noStroke(0);
+	fill(random(255),random(255),random(255));
+	var cx = x+random(-50,50);
+	var cy = y+random(-200,0);
+	beginShape();
+	curveVertex(cx, cy);//centro arriba
+	curveVertex(x+random(200), y+random(0,-50));
+	curveVertex(x+random(200), y+random(0,50));
+	curveVertex(x+random(-50,50), y+random(0,200));//centro abajo
+	curveVertex(x+random(-200,0), y+random(0,50));
+	curveVertex(x+random(-200,0), y+random(0,-50));
+	curveVertex(cx, cy);
+	endShape(CLOSE);
+}
 
 
 </script>
