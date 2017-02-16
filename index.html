@@ -1,0 +1,56 @@
+<html>
+  <head>
+	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+	<script src="https://raw.githubusercontent.com/processing/p5.js-sound/master/lib/p5.sound.js"></script>
+
+	<style type="text/css">
+  		body {
+    			margin:0px;
+		}
+  	</style>
+  </head>
+  <body>
+  
+    
+<script>
+var value = 0;
+var r = 0;
+var t, x, y,width,height;
+
+
+function setup() {
+	width=displayWidth;
+	height=displayHeight*0.8;
+	createCanvas(width, height);
+	x=width/2;
+	y=height/2;
+	t=0;
+	background(20,200,20);
+
+}	
+	
+	
+
+function draw() {
+
+}
+	
+function touchStarted() {
+	recto ();
+  curvo();
+  linea();
+	
+}
+
+function linea(){
+  for (var i=0; i<10;i++){
+    line (i*100,i*50);
+  }
+
+}
+
+
+</script>
+  </body>
+</html>
