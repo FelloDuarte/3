@@ -44,13 +44,26 @@ function touchStarted() {
 }
 
 function linea(){
-
-  for (var i=0; i<10;i++){
-    line (random(width),random(height),random(width),random(height));
-  }
+	strokeWeight(3);
+	stroke(random(255),random(255),random(255));
+	for (var i=0; i<10;i++){
+		line (random(width),random(height),random(width),random(height));
+ 	}
+}
 	
-
-
+function recto(){
+	noStroke(0);
+	fill(random(255),random(255),random(255));
+	beginShape();
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	vertex(random(width), random(height));
+	endShape(CLOSE);
 }
 
 
