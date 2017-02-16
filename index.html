@@ -56,14 +56,13 @@ function recto(){
 	noStroke(0);
 	fill(random(255),random(255),random(255));
 	beginShape();
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
-	vertex(random(width), random(height));
+	vertex(x+random(-50,50), y-random(200));
+	vertex(x+random(50), y+random(-50,50));
+	vertex(x+random(-50,50), y+random(50));
+	vertex(x+random(-50,50), y-random(200));
+	vertex(x-random(100), y-random(100));
+	vertex(x-random(200), y+random(-50,50));
+
 	endShape(CLOSE);
 }
 
