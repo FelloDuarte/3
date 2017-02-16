@@ -17,6 +17,7 @@
 var value = 0;
 var r = 0;
 var t, x, y,width,height;
+var bg = color(123,23,134);
 
 
 function setup() {
@@ -26,7 +27,7 @@ function setup() {
 	x=width/2;
 	y=height/2;
 	t=0;
-	background(200,200,20);
+	background(bg);
 
 }	
 	
@@ -37,8 +38,8 @@ function draw() {
 }
 	
 function touchStarted() {
-
-  linea();
+	background(bg);
+	linea();
 	
 }
 
