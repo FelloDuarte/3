@@ -58,12 +58,12 @@ function recto(){
 	for (var i=0;i<5;i++){
 	fill(random(255),random(255),random(255));
 	beginShape();
-	vertex(x+random(-50,50), y+random(-100,0));//centro arriba
-	vertex(x+random(100), y+random(0,-50));
-	vertex(x+random(100), y+random(0,50));
-	vertex(x+random(-50,50), y+random(0,100));//centro abajo
-	vertex(x+random(-100,0), y+random(0,50));
-	vertex(x+random(-100,0), y+random(0,-50));
+	vertex(x+random(-30,30), y+random(-100,0));//centro arriba
+	vertex(x+random(100), y+random(0,-30));
+	vertex(x+random(100), y+random(0,30));
+	vertex(x+random(-30,30), y+random(0,100));//centro abajo
+	vertex(x+random(-100,0), y+random(0,30));
+	vertex(x+random(-100,0), y+random(0,-30));
 
 	endShape(CLOSE);
 	}
